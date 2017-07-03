@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  Webserver:
+    Type: 'AWS::EC2::Instance'
+    DeletionPolicy: Delete
+    Properties:
+      ImageId: ami-b2784aa4
+      InstanceType: t2.micro
+      KeyName: Test
